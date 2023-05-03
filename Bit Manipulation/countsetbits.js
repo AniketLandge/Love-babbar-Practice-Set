@@ -7,11 +7,11 @@
 
 
 let setBit = (n) => {
-    let count = 0;
+    let count = 0; // initial count
     while(n) {
-        let bit =  n&1;
+        let bit =  n&1; // logical AND operation
         if(bit) count++
-        n = n>>1 
+        n = n>>1 //right shift 
     }
     return count;
 }
